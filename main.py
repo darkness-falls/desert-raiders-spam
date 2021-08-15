@@ -11,7 +11,7 @@ if conf is False:
 	api_hash = input("Введите api hash: ")
 	number = input("Введите номер телефона: ")
 	f = open('core/config.py', "w")
-	f.write(f"api_id = '{api_id}'  #  Вставляем апи айди\n api_hash = '{api_hash}'  #  Вставляем апи хэш\n number = '{number}'  #  Вставляем номер телефона(для авторизации)")
+	f.write(f"api_id = '{api_id}'\napi_hash = '{api_hash}'\nnumber = '{number}'")
 	f.close()
 
 
