@@ -9,7 +9,7 @@ from telethon.sync import TelegramClient
 from telethon.tl.types import PeerUser, MessageMediaDocument, PeerChannel, MessageMediaPhoto, InputPeerEmpty
 from telethon.tl.functions.messages import GetDialogsRequest
 import helps
-
+import config
 
 
 client = TelegramClient(config.number, config.api_id, config.api_hash)
