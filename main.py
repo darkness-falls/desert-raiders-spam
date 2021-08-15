@@ -3,6 +3,18 @@ from colorama import Fore, Back, Style
 
 print("Телеграм спаммер")
 
+
+
+conf = os.path.exists('config.py')
+if conf is False:
+	api_id = input('Введите api id: ')
+	api_hash = input("Введите api hash: ")
+	number = input("Введите номер телефона: ")
+	f = open('config.py', "w")
+	f.write(f"api_id = '{api_id}'  #  Вставляем апи айди\n api_hash = '{api_hash}'  #  Вставляем апи хэш\n number = '{number}'  #  Вставляем номер телефона(для авторизации)")
+	f.close()
+
+
 print(Fore.LIGHTCYAN_EX + """
     ____                      __     ____        _     __              
    / __ \___  ________  _____/ /_   / __ \____ _(_)___/ /__  __________
