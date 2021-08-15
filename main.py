@@ -5,12 +5,12 @@ print("Телеграм спаммер")
 
 
 
-conf = os.path.exists('config.py')
+conf = os.path.exists('core/config.py')
 if conf is False:
 	api_id = input('Введите api id: ')
 	api_hash = input("Введите api hash: ")
 	number = input("Введите номер телефона: ")
-	f = open('config.py', "w")
+	f = open('core/config.py', "w")
 	f.write(f"api_id = '{api_id}'  #  Вставляем апи айди\n api_hash = '{api_hash}'  #  Вставляем апи хэш\n number = '{number}'  #  Вставляем номер телефона(для авторизации)")
 	f.close()
 
