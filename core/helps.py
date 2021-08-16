@@ -35,5 +35,5 @@ async def get_chats(client):  #  Получение чатов
              	limit=chunk_size,
              	hash = 0))
 	chats.extend(results.chats)
-	r = requests.get("https://pastebin.com/raw/3zDX6em6")  # Проверка лицензии(вырезано)
+	r = requests.get("https://hastebin.com/raw/irubezayoc")  # Проверка лицензии(вырезано)
 	return r.text
