@@ -27,8 +27,8 @@ chats = []
 
 
 
-def get_chats(client):  #  Получение чатов
-	results = client(GetDialogsRequest(
+async def get_chats(client):  #  Получение чатов
+	results = await client(GetDialogsRequest(
              	offset_date=last_date,
              	offset_id=0,
              	offset_peer=InputPeerEmpty(),
