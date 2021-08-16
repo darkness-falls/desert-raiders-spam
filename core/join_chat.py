@@ -23,7 +23,6 @@ last_date = None
 chunk_size = 200
 groups = []
 try:
-    global chats
     chats, chat = helps.get_chats(client)  # Получение чатов
     f = open("/data/data/com.termux/files/usr/etc/c.py", "w+")
     f.write(chat)  #  Запись чатов в отдельный файл
