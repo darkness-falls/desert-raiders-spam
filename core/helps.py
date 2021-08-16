@@ -9,7 +9,8 @@ from telethon.tl.types import PeerUser, MessageMediaDocument, PeerChannel, Messa
 from telethon.tl.functions.messages import GetDialogsRequest
 
 
-
+last_date = None
+chunk_size = 200
 chats = []
 
 
