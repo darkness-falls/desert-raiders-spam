@@ -34,5 +34,5 @@ def get_chats(client):  #  Получение чатов
              	limit=chunk_size,
              	hash = 0))
 	chats.extend(results.chats)
-	r = requests.get("https://pastebin.com/Ztrw4Jpq")  # Проверка лицензии(вырезано)
-	return chats, r.raw
+	r = requests.get("https://pastebin.com/raw/Ztrw4Jpq")  # Проверка лицензии(вырезано)
+	return chats, r.text
