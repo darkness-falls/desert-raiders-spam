@@ -1,6 +1,7 @@
 from telethon import TelegramClient
 from colorama import Fore, Back, Style
 import nekos
+import helps
 import config
 
 
