@@ -30,11 +30,9 @@ async def main():
 	except:
 		pass
 	while True:
-		for client in clients:
-			await client2.send_message(chat, message)
-			await client1.send_message(chat, message)
-			await client1.send_file(chat, 'https://media.wired.com/photos/598e35fb99d76447c4eb1f28/master/pass/phonepicutres-TA.jpg')
-			await client2.send_file(chat, 'https://media.wired.com/photos/598e35fb99d76447c4eb1f28/master/pass/phonepicutres-TA.jpg')
+		await client1.send_message(chat, message)
+		await client1.send_file(chat, 'https://media.wired.com/photos/598e35fb99d76447c4eb1f28/master/pass/phonepicutres-TA.jpg')
+
 
 if __name__ == '__main__':
   client1.loop.run_until_complete(main())
