@@ -1,6 +1,7 @@
 from telethon import TelegramClient
 from colorama import Fore, Back, Style
 import nekos
+import config
 
 
 client1 = TelegramClient(config.number, config.api_id, config.api_hash)
