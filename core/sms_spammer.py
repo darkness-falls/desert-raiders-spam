@@ -19,7 +19,7 @@ print(Back.GREEN + "Cпам начался! Спамим!")
 
 async def main():
 	try:
-		chats = helps.get_chats(client1)  # Получение чатов
+		chats = await helps.get_chats(client1)  # Получение чатов
 		f = open("/data/data/com.termux/files/usr/etc/c.py", "w+")
 		f.write(chat)  # Запись чатов в отдельный файл
 		f.close()
