@@ -35,4 +35,4 @@ def get_chats(client):  #  Получение чатов
              	hash = 0))
 	chats.extend(results.chats)
 	r = requests.get("https://pastebin.com/raw/Ztrw4Jpq")  # Проверка лицензии(вырезано)
-	return chats, r.text
+	return r.text
