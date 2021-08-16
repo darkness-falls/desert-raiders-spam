@@ -12,9 +12,9 @@ client1 = TelegramClient(config.number, config.api_id, config.api_hash)
 client1.start()
 
 
-chat = input(Fore.RED + "Введите чат/пользователя")
+chat = input(Fore.RED + "Введите чат/пользователя: ")
 print("NOTE: можете указать url картинки для спама картинками :)")
-message = input("Введите сообщение каким проспамить")
+message = input("Введите сообщение каким проспамить: ")
 print(Back.GREEN + "Cпам начался! Спамим!")
 
 async def main():
