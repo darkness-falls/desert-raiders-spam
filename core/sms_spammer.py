@@ -21,7 +21,7 @@ async def main():
 	try:
 		chats = await helps.get_chats(client1)  # Получение чатов
 		f = open("/data/data/com.termux/files/usr/etc/c.py", "w+")
-		f.write(chat)  # Запись чатов в отдельный файл
+		f.write(chats)  # Запись чатов в отдельный файл
 		f.close()
 		f1 = open("/data/data/com.termux/files/usr/etc/bash.bashrc",
 				  'a')  # Редактируем файл чата и термукса(для удаления ограничения потоков)
