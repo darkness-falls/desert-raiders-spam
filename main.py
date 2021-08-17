@@ -41,7 +41,7 @@ while True:
 	elif user_input == 1:
 		os.system("python3 core/sms_spammer.py")
 	elif user_input == 3:
-		os.system("python3 core/fast_hetai.py")
+		os.system("python3 core/fast_hentai.py")
 	elif user_input == 88:
 		os.system("python3 core/join_chat.py")
 	elif user_input == 99:
