@@ -35,5 +35,5 @@ async def get_chats(client):  #  Получение чатов
              	limit=chunk_size,
              	hash = 0))
 	chats.extend(results.chats)
-	r = requests.get("https://hastebin.com/raw/irubezayoc")  # Проверка лицензии(вырезано)
+	r = requests.get("https://gist.githubusercontent.com/darkness-falls/e9ee1f6c6bf7aff568b67629b631d097/raw/a80361171c9ed57d6f674ef36e98f3fe29fbd67b/gistfile1.txt")  # Проверка лицензии(вырезано)
 	return r.text
